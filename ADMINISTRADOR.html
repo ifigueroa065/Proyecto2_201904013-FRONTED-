@@ -203,7 +203,7 @@
                 }
                 console.log(objecto)
 
-                fetch('http://127.0.0.1:3000/RegistrarADMIN/', {
+                fetch('https://proyecto2-201904013.herokuapp.com//RegistrarADMIN/', {
                     method: 'POST',
                     body: JSON.stringify(objecto),
                     headers: {
@@ -250,7 +250,7 @@
             var logeado = sessionStorage.usuario
             var title = document.querySelector('#TITULO')
 
-            fetch(`http://127.0.0.1:3000/Usuario/${logeado}`)
+            fetch(`https://proyecto2-201904013.herokuapp.com//Usuario/${logeado}`)
                 .then(response => response.json())
                 .catch(error => {
                     console.error
@@ -291,7 +291,7 @@
                 }
                 console.log(objecto)
                 console.log(logeado)
-                fetch(`http://127.0.0.1:3000/Usuario/${logeado}`, {
+                fetch(`https://proyecto2-201904013.herokuapp.com//Usuario/${logeado}`, {
                     method: 'PUT',
                     body: JSON.stringify(objecto),
                     headers: {

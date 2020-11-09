@@ -110,7 +110,7 @@
         function MostrarCanciones() {
             var contenido = document.querySelector('#TBODY')
             contenido.innerHTML = ""
-            fetch('http://127.0.0.1:3000/SOLICITUDES')
+            fetch('https://proyecto2-201904013.herokuapp.com//SOLICITUDES')
                 
                 .then(response => response.json())
                 .catch(error => {
@@ -145,7 +145,7 @@
         }
         function ADDCancion(boton){
             var id= boton.value
-            fetch(`http://127.0.0.1:3000/SOLICITUDES/${id}`, {
+            fetch(`https://proyecto2-201904013.herokuapp.com//SOLICITUDES/${id}`, {
                         method: 'POST'
         
                     }).then(res => res.json())
@@ -162,7 +162,7 @@
         }
         function DELCancion(boton){
             var id= boton.value
-            fetch(`http://127.0.0.1:3000/SOLICITUDES/${id}`, {
+            fetch(`https://proyecto2-201904013.herokuapp.com//SOLICITUDES/${id}`, {
                         method: 'DELETE'
         
                     }).then(res => res.json())

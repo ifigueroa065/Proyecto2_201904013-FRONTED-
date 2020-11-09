@@ -51,7 +51,7 @@
                     var cancion=sessionStorage.ID
                     var title= document.querySelector('#DETALLES')
                     title.innerHTML=`` 
-                fetch(`http://127.0.0.1:3000/CANCIONES/${cancion}`)
+                fetch(`https://proyecto2-201904013.herokuapp.com//CANCIONES/${cancion}`)
                 .then(response => response.json())
                 .catch(error => {
                     console.error
@@ -127,7 +127,7 @@
                     }
                     console.log(objecto)
                     
-                    fetch(`http://127.0.0.1:3000/COMENTARIO/${id}`, {
+                    fetch(`https://proyecto2-201904013.herokuapp.com//COMENTARIO/${id}`, {
                         method: 'POST',
                         body: JSON.stringify(objecto),
                         headers: {
@@ -154,7 +154,7 @@
            function CARGARCOMENTS(){
             var CO= document.querySelector('#COMENTS')
             var cancion=sessionStorage.ID
-                fetch(`http://127.0.0.1:3000/COMENTARIOS/${cancion}`)
+                fetch(`https://proyecto2-201904013.herokuapp.com//COMENTARIOS/${cancion}`)
                 .then(response => response.json())
                 .catch(error => {
                     console.error

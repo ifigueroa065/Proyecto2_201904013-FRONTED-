@@ -163,7 +163,7 @@
                 }
                 console.log(objeto)
 
-                fetch('http://127.0.0.1:3000/CANCIONES/', {
+                fetch('https://proyecto2-201904013.herokuapp.com//CANCIONES/', {
                     method: 'POST',
                     body: JSON.stringify(objeto),
                     headers: {
@@ -189,7 +189,7 @@
         function MostrarCanciones() {
             var contenido = document.querySelector('#TBODY')
             contenido.innerHTML= ` `
-            fetch('http://127.0.0.1:3000/CANCIONES')
+            fetch('https://proyecto2-201904013.herokuapp.com//CANCIONES')
                 .then(response => response.json())
                 .catch(error => {
                     console.log(error)
@@ -239,7 +239,7 @@
         function DELCANCION(boton) {
             var id = boton.value
             var cuerpo=document.querySelector('#TBODY')
-            fetch(`http://127.0.0.1:3000/CANCIONES/${id}`, {
+            fetch(`https://proyecto2-201904013.herokuapp.com//CANCIONES/${id}`, {
                 method: 'DELETE'
 
             }).then(res => res.json())
@@ -270,7 +270,7 @@
             }
             console.log(objecto)
 
-            fetch('http://127.0.0.1:3000/Registrar/', {
+            fetch('https://proyecto2-201904013.herokuapp.com//Registrar/', {
                 method: 'POST',
                 body: JSON.stringify(objecto),
                 headers: {

@@ -95,7 +95,7 @@
             var id=sessionStorage.ID
             var tablita = document.querySelector('#TBODY')
             tablita.innerHTML= ` `
-            fetch(`http://127.0.0.1:3000/COMENTARIOS/${id}`)
+            fetch(`https://proyecto2-201904013.herokuapp.com//COMENTARIOS/${id}`)
                 .then(response => response.json())
                 .catch(error => {
                     console.error
