@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <audio src="Kangaroo Court.mp3" autoplay loop></audio>
+        <audio id="CANCION" src="Kangaroo Court.mp3" autoplay loop></audio>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -103,6 +103,10 @@
                 <div class="resume-section-content">
                     <center>
                         <h2 class="mb-5">INFORMACIÓN</h2>
+                        <p>Cancion de fondo</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('CANCION').pause()">PAUSE </button>
+                        
+                        <button class="btn btn-dark" onclick="document.getElementById('CANCION').play()">PLAY</button>
                     </center>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
