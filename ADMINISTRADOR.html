@@ -270,6 +270,7 @@
         }
 
         function CerrarSesion() {
+            alert("VUELVE PRONTO :)")
             location.href = "INICIO.html"
         }
 
@@ -315,6 +316,7 @@
                         } else {
                             alert("SE MODIFICÓ CORRECTAMENTE")
                             sessionStorage.setItem("usuario",usuarioM)
+                            CargarInfo()
                         }
                     })
             } else {
